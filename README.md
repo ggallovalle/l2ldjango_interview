@@ -19,8 +19,8 @@ run the example web application. In your cloned repo directory run the following
 - `$ which python3`
 - `$ <output of previous command> -m venv l2lpyenv`
 - `$ . ./l2lpyenv/bin/activate`
-- `$ pip install django==3.1.7`
-- `$ python manage.py runserver 0.0.0.0:8443`
+- `$ pip install Django==3.2.3`
+- `$ python manage.py runserver 0.0.0.0:8080`
 
 You should now see output indicating that the Django site is running. If you run into a situation where you are told 
 that the version of sqlite is not compatible with the Django version you are running you can run the following 
@@ -35,10 +35,10 @@ commands. If everything is working, skip over these steps.
 If you needed to run the above steps for sqlite then you will want to run the following command before starting django 
 with the runserver command:
 - `$ export LD_LIBRARY_PATH=/usr/local/lib`
-- `$ python manage.py runserver 0.0.0.0:8443`
+- `$ python manage.py runserver 0.0.0.0:8080`
 
 At this point you will only need to run the runserver command in order to start the web server. If you go to a browser 
-you can now open the main page served by the web server by entering something like `http://localhost:8443/` into the 
+you can now open the main page served by the web server by entering something like `http://localhost:8080/` into the 
 url address bar. Congrats you can follow directions :-)
 
 You are now set to work on adding a custom Django filter to the application. If you look inside 
